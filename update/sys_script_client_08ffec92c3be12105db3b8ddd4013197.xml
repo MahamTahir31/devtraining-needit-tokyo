@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Hide log section of the needit fom when priority is 1-criticial</description>
+        <field>priority</field>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Hide Log Section</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+   //this example was run on a form divided into sections (Change form)
+   // and hid a section when the "state" field was changed
+   var sectionNames = g_form.getSectionNames();
+   alert(sectionNames);
+   var sections = g_form.getSections();
+   alert(sections);
+   if (newValue == '1') {
+	alert('inside if');
+      g_form.setSectionDisplay('log', false);
+   } else {
+      g_form.setSectionDisplay('log', true);
+   }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-01 20:51:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>08ffec92c3be12105db3b8ddd4013197</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>Hide Log Section</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_client_08ffec92c3be12105db3b8ddd4013197</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-02 12:12:16</sys_updated_on>
+        <table>x_58872_needit_needit</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
