@@ -6,7 +6,9 @@
         <caller_access/>
         <client_callable>true</client_callable>
         <description>Script Include to return an email address.  The calling client-side script passes a sys_id for a User table record.</description>
+        <mobile_callable>false</mobile_callable>
         <name>GetEmailAddress</name>
+        <sandbox_callable>true</sandbox_callable>
         <script><![CDATA[var GetEmailAddress = Class.create();
 // Extend the global.AbstractAjaxProcessor class
 GetEmailAddress.prototype = Object.extendsObject(global.AbstractAjaxProcessor,{

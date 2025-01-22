@@ -13,6 +13,6 @@
         <sys_update_name>sys_security_acl_role_a7133a3ac37ed2105db3b8ddd40131fc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-01-03 19:38:14</sys_updated_on>
-        <sys_user_role display_value="x_58872_needit.needit_user" name="x_58872_needit.needit_user">4e42fb8d0fa83200cd674f8ce1050e72</sys_user_role>
+        <sys_user_role display_value="">4e42fb8d0fa83200cd674f8ce1050e72</sys_user_role>
     </sys_security_acl_role>
 </record_update>
